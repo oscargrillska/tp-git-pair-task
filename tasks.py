@@ -21,6 +21,11 @@ def validera_anvandarnamn(anvandarnamn: str) -> bool:
     Ett användarnamn är giltigt (True) om det är minst 5 tecken långt.
     Annars ska den returnera False.
     """
+
+    if len(anvandarnamn) >= 5:
+        return True
+    else:
+        return False
     
     # TODO: Skriv en if-sats som kollar om anvandarnamn är minst 5 tecken långt (använd len()).
     # Just nu returnerar den alltid False.
